@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f2f5;
+        }
+        .container {
+            width: 350px;
+            background: white;
+            padding: 20px;
+            margin: 50px auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #1877f2;
+            font-size: 32px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .gender {
+            display: flex;
+            justify-content: space-between;
+        }
+        .gender label {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+            background: #f9f9f9;
+        }
+        .gender input {
+            display: none;
+        }
+        .gender label:hover {
+            background: #e4e6eb;
+        }
+        .btn {
+            background: #42b72a;
+            color: white;
+            font-size: 18px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background: #36a420;
+        }
+        .login-link {
+            display: block;
+            margin-top: 10px;
+            color: #1877f2;
+            text-decoration: none;
+        }
+        .login-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>facebook</h1>
+    <div class="container">
+        <h2>Create a new account</h2>
+        <p>It's quick and easy.</p>
+        
+        <input type="text" placeholder="First name"><input type="text" placeholder="Surname">
+        
+        <select>
+            <option>date</option>
+        </select>
+        <select>
+            <option>Month</option>
+        </select>
+        <select>
+            <option>Year</option>
+        </select>
+
+        <div class="gender">
+            <label><input type="radio" name="gender"> Female</label>
+            <label><input type="radio" name="gender"> Male</label>
+            <label><input type="radio" name="gender"> Custom</label>
+        </div>
+
+        <input type="text" placeholder="Mobile number or email address">
+        <input type="password" placeholder="New password">
+
+        <button class="btn">Sign Up</button>
+        <a href="#" class="login-link">Already have an account?</a>
+    </div>
+
+</body>
+</html>

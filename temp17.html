@@ -6,6 +6,18 @@
     <title>Document</title>
     <script>
       let users = [];
+      function chkUser(){
+        let email = document.getElementById("email").value;
+        let password = document.getElementById("password").value;
+        let length = users.length
+        for(let i=0;i<length;i++){
+            if(users[i].email==email && users[i].password==password){
+                root.innerHTML = `<div> Welcome </div>
+                <button onclick='showLogin()'>Logout</button>`
+            }
+        }
+
+      }
       
       function showLogin(){
         root.innerHTML = `
@@ -72,7 +84,7 @@
       //   showForm()
     </script>
   </head>
-  <body onload="showForm()">
+  <body onload="showLogin()">
     <div id="root"></div>
     <!-- <h1>New User Signup Form</h1>
     <p><input type="text" id="name" /></p>
